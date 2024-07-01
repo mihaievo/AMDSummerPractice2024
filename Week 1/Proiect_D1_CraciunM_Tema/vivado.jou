@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jul  1 20:36:26 2024
+# Process ID: 14696
+# Current directory: C:/Users/mihai/Downloads/AMDSummerPractice-main/AMDSummerPractice-main/Proiect_D1_CraciunM_Tema
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1740 C:\Users\mihai\Downloads\AMDSummerPractice-main\AMDSummerPractice-main\Proiect_D1_CraciunM_Tema\Proiect_D1_CraciunM_Tema.xpr
+# Log file: C:/Users/mihai/Downloads/AMDSummerPractice-main/AMDSummerPractice-main/Proiect_D1_CraciunM_Tema/vivado.log
+# Journal file: C:/Users/mihai/Downloads/AMDSummerPractice-main/AMDSummerPractice-main/Proiect_D1_CraciunM_Tema\vivado.jou
+# Running On: EVOLEGION-Y530, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 8458 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mihai/Downloads/AMDSummerPractice-main/AMDSummerPractice-main/Proiect_D1_CraciunM_Tema/Proiect_D1_CraciunM_Tema.xpr
+update_compile_order -fileset sources_1
