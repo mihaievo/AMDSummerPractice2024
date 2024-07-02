@@ -40,7 +40,7 @@ module mux_2_1_struc #(parameter DATA_WIDTH = 8) (
         output [DATA_WIDTH - 1:0] O
     );
     // assign is cleaner and we do not use reg in this case.
-      assign O = (SEL == 0) ? I0 : I1;   
+      assign O = ({DATA_WIDTH{~SEL}} & I0) | ({DATA_WIDTH{SEL}} & I1);
 endmodule
 
 // we will not declare a top module, but we will test each multiplexer separately in the
