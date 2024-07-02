@@ -34,7 +34,6 @@ module ALU #(parameter DATA_WIDTH = 8)(
             4'b00xx: begin
                          ZERO = 1'bx;
                          ERR_RESERVED = 1'b0;
-                         O = {DATA_WIDTH{1'bx}};
                      end
             4'b010x, 
             4'b0110: begin
