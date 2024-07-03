@@ -46,7 +46,7 @@ module ALU #(parameter DATA_WIDTH = 8)(
     always@(A or B or OP)
         case(OP)
             4'b0000: {OF, O} = A + B;
-            4'b0001: {OF, O} = A - B;
+            4'b0001: {OF, O} = A + (~B + 1); // A - B
             4'b0010: {OF, O} = A << B; // we will consider OF as CY out
             4'b0011: O = A >> B; // we could do the same here
             4'b0100: ZERO = (A == B) ? 1'b1 : 1'b0; // if we want O = {{DATA_WIDTH - 1{1'b0}}, 1'b1} : {DATA_WIDTH{1'b0}};
