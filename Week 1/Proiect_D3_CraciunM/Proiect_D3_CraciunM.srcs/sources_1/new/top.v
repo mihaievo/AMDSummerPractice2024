@@ -25,39 +25,33 @@ module clk_divider(
         input [15:0] di,
         input EN,
         output reg clk_out,
-        output reg [15:0] poscnt,
-        output reg [15:0] holdclk
+        output reg [15:0] poscnt
     );       
     
     reg [15:0] data_read;
     reg [15:0] posedge_cnt;
-    reg [15:0] hold_clk;
     
     always@(clk or EN)
     begin
-        if(pl)
+        if(pl) begin
             data_read <= di;
-        if(EN)
-            if(posedge_cnt >= data_read) begin
-                clk_out <= 1'b1;
-                hold_clk <= hold_clk + 1;
-                if(hold_clk >= data_read - 1) begin
-                    posedge_cnt <= 0;
-                    hold_clk <= 0;
-                end
+            posedge_cnt <= 0; // we reset the counter
+            clk_out <= 0; // we also reset clk_out (we want to start over)
+        end
+        else if(EN) begin
+            // if we held the clock for data_read times, we reset it and negate clk.
+            if(posedge_cnt >= (data_read - 1)) begin
+                posedge_cnt <= 0;
+                clk_out <= ~clk_out; // we switch the clock on or off when we reached data_read times.
             end
-            else begin
-                clk_out <= 1'b0;
-                posedge_cnt <= posedge_cnt + 1;
-            end
-        else begin
-            posedge_cnt <= 0;
-            clk_out <= 0;
-            hold_clk <= 0;
-            end
-      poscnt <= posedge_cnt;
-      holdclk <= hold_clk;
-      end           
+                else // otherwise, we increment the counter.
+                    posedge_cnt <= posedge_cnt + 1;
+         end
+         // we add a debug option, however we could remove it and just add it in 
+         // waveform view : scope > dut > poscnt(in objects window) > rclick >
+         // add to wave window > relaunch simulation.
+         poscnt = posedge_cnt;
+    end           
 endmodule
 
 module tb_clkdiv;
@@ -68,7 +62,6 @@ module tb_clkdiv;
         wire clk_outt;
         
         wire [15:0] poscntt;
-        wire [15:0] holdclkt;
         
         clk_divider dut(
             .clk(clkt),
@@ -76,8 +69,7 @@ module tb_clkdiv;
             .di(dit),
             .EN(ENt),
             .clk_out(clk_outt),
-            .poscnt(poscntt),
-            .holdclk(holdclkt)
+            .poscnt(poscntt)
             );
            
         

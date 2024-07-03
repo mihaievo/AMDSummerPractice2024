@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_clkdiv_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_clkdiv" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="100.001 ns"></ZoomEndTime>
+      <Cursor1Time time="100.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/tb_clkdiv/clkt" type="logic">
+      <obj_property name="ElementShortName">clkt</obj_property>
+      <obj_property name="ObjectShortName">clkt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clkdiv/plt" type="logic">
+      <obj_property name="ElementShortName">plt</obj_property>
+      <obj_property name="ObjectShortName">plt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clkdiv/dit" type="array">
+      <obj_property name="ElementShortName">dit[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dit[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clkdiv/ENt" type="logic">
+      <obj_property name="ElementShortName">ENt</obj_property>
+      <obj_property name="ObjectShortName">ENt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clkdiv/clk_outt" type="logic">
+      <obj_property name="ElementShortName">clk_outt</obj_property>
+      <obj_property name="ObjectShortName">clk_outt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clkdiv/poscntt" type="array">
+      <obj_property name="ElementShortName">poscntt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">poscntt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

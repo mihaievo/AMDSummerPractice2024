@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jul  3 20:59:00 2024
+# Process ID: 10656
+# Current directory: C:/Users/mihai/Downloads/AMDSummerPractice2024-main/AMDSummerPractice2024-main/Week 1/Proiect_D3_CraciunM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16028 C:\Users\mihai\Downloads\AMDSummerPractice2024-main\AMDSummerPractice2024-main\Week 1\Proiect_D3_CraciunM\Proiect_D3_CraciunM.xpr
+# Log file: C:/Users/mihai/Downloads/AMDSummerPractice2024-main/AMDSummerPractice2024-main/Week 1/Proiect_D3_CraciunM/vivado.log
+# Journal file: C:/Users/mihai/Downloads/AMDSummerPractice2024-main/AMDSummerPractice2024-main/Week 1/Proiect_D3_CraciunM\vivado.jou
+# Running On: EVOLEGION-Y530, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 8458 MB
+#-----------------------------------------------------------
+start_gui
+open_project -part xc7s6ftgb196-1 {C:/Users/mihai/Downloads/AMDSummerPractice2024-main/AMDSummerPractice2024-main/Week 1/Proiect_D3_CraciunM/Proiect_D3_CraciunM.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_clkdiv.tcl
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/mihai/Downloads/AMDSummerPractice2024-main/AMDSummerPractice2024-main/Week 1/Proiect_D3_CraciunM/tb_clkdiv_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/mihai/Downloads/AMDSummerPractice2024-main/AMDSummerPractice2024-main/Week 1/Proiect_D3_CraciunM/tb_clkdiv_behav.wcfg}}
+set_property xsim.view {{C:/Users/mihai/Downloads/AMDSummerPractice2024-main/AMDSummerPractice2024-main/Week 1/Proiect_D3_CraciunM/tb_clkdiv_behav.wcfg}} [get_filesets sim_1]
+close_sim
