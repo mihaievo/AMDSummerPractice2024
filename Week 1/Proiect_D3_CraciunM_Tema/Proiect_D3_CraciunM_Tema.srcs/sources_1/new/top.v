@@ -53,10 +53,13 @@ module SISO_regD #(parameter DATA_WIDTH = 8)(
         always@(posedge CLK)
             if(RS)
                 sh_reg <= {DATA_WIDTH{1'b0}};
-            else if (SL)
+            else if (SL) begin
                 sh_reg <= {sh_reg[DATA_WIDTH - 2:0], D};
+                end
+            else // we rotate through sh_reg to print the value in it.
+                sh_reg <= {sh_reg[DATA_WIDTH - 2:0], sh_reg[DATA_WIDTH - 1]};
          // we take only the last bit from the shift register as output.       
-         assign Q = sh_reg[DATA_WIDTH - 1];
+         assign Q = (SL == 1'b0) ? sh_reg[DATA_WIDTH - 1] : 1'bx;
 endmodule
 
 // a PISO register has parallel loaded data in, and serial loaded data out.
@@ -78,10 +81,10 @@ module PISO_regD #(parameter DATA_WIDTH = 8)(
             else if (PL)
                 sh_reg <= D;
             else // if we are not loading, we will output the data in the register.
-                // we will output from MSB to LSB, by shifting right.
-                sh_reg <= {1'b0, sh_reg[DATA_WIDTH - 1:1]};
+                // we will output from MSB to LSB, by rotating left.
+                sh_reg <= {sh_reg[DATA_WIDTH - 2:0], sh_reg[DATA_WIDTH - 1]};
                 
-        assign Q = sh_reg[0];
+        assign Q = sh_reg[DATA_WIDTH - 1];
 endmodule
 
 // a SIPO register has serial loaded data in, and parallel loaded data out.
@@ -103,7 +106,7 @@ module SIPO_regD #(parameter DATA_WIDTH = 8)(
             else if (SL)
                 sh_reg <= {sh_reg[DATA_WIDTH - 2:0], D};
                 
-            assign Q = sh_reg;
+            assign Q = (SL == 1'b0) ? sh_reg : {DATA_WIDTH{1'bx}};
 endmodule
 
 
@@ -157,7 +160,7 @@ module tb_top;
         
     // we end testing after 100ns
     initial 
-        #100 $finish;
+        #200 $finish;
     
     // we generate the clock signal
     initial
@@ -173,6 +176,7 @@ module tb_top;
            PLt = 1'b0; SLt = 1'b0;
         #10 RSt = 1'b0; PLt = 1'b1; SLt = 1'b1;
         #10 PLt = 1'b0;
+        #30 SLt = 1'b0;
     end
     
 endmodule

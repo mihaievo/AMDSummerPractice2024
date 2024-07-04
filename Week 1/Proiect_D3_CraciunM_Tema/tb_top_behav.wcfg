@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="100.001 ns"></ZoomEndTime>
-      <Cursor1Time time="100.000 ns"></Cursor1Time>
+      <ZoomEndTime time="200.001 ns"></ZoomEndTime>
+      <Cursor1Time time="200.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="13" />
    <wvobject fp_name="/tb_top/CLKt" type="logic">
@@ -50,15 +50,6 @@
       <obj_property name="ObjectShortName">Q_PIPO[7:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/dut_SISO/sh_reg" type="array">
-      <obj_property name="ElementShortName">sh_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">sh_reg[7:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/Q_SISO" type="logic">
-      <obj_property name="ElementShortName">Q_SISO</obj_property>
-      <obj_property name="ObjectShortName">Q_SISO</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_top/dut_PISO/sh_reg" type="array">
       <obj_property name="ElementShortName">sh_reg[7:0]</obj_property>
       <obj_property name="ObjectShortName">sh_reg[7:0]</obj_property>
@@ -67,6 +58,15 @@
    <wvobject fp_name="/tb_top/Q_PISO" type="logic">
       <obj_property name="ElementShortName">Q_PISO</obj_property>
       <obj_property name="ObjectShortName">Q_PISO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/dut_SISO/sh_reg" type="array">
+      <obj_property name="ElementShortName">sh_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sh_reg[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/Q_SISO" type="logic">
+      <obj_property name="ElementShortName">Q_SISO</obj_property>
+      <obj_property name="ObjectShortName">Q_SISO</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/dut_SIPO/sh_reg" type="array">
       <obj_property name="ElementShortName">sh_reg[7:0]</obj_property>
