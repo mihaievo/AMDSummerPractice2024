@@ -1,0 +1,33 @@
+
+*** Running vivado
+    with args -log tb_mem.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_mem.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source tb_mem.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1461.234 ; gain = 160.156
+Command: synth_design -top tb_mem -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5140
+ERROR: [Synth 8-10936] loop variable declaration is not allowed in this mode of Verilog [C:/Users/training/Week 2/Proiect_D3_CraciunM/Proiect_D3_CraciunM.srcs/sources_1/new/top.v:32]
+INFO: [Synth 8-10285] module 'RAM' is ignored due to previous errors [C:/Users/training/Week 2/Proiect_D3_CraciunM/Proiect_D3_CraciunM.srcs/sources_1/new/top.v:42]
+INFO: [Synth 8-10285] module 'ROM' is ignored due to previous errors [C:/Users/training/Week 2/Proiect_D3_CraciunM/Proiect_D3_CraciunM.srcs/sources_1/new/top.v:65]
+INFO: [Synth 8-10285] module 'tb_mem' is ignored due to previous errors [C:/Users/training/Week 2/Proiect_D3_CraciunM/Proiect_D3_CraciunM.srcs/sources_1/new/top.v:114]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/training/Week 2/Proiect_D3_CraciunM/Proiect_D3_CraciunM.srcs/sources_1/new/top.v' ignored due to errors
+Failed to read verilog 'C:/Users/training/Week 2/Proiect_D3_CraciunM/Proiect_D3_CraciunM.srcs/sources_1/new/top.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 10 12:54:55 2024...
