@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="150.001 ns"></ZoomEndTime>
+      <Cursor1Time time="8.459 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb_top/clkt" type="logic">
+      <obj_property name="ElementShortName">clkt</obj_property>
+      <obj_property name="ObjectShortName">clkt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/IM_CONTENT" type="array">
+      <obj_property name="ElementShortName">IM_CONTENT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IM_CONTENT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGDST" type="logic">
+      <obj_property name="ElementShortName">REGDST</obj_property>
+      <obj_property name="ObjectShortName">REGDST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGWRITE" type="logic">
+      <obj_property name="ElementShortName">REGWRITE</obj_property>
+      <obj_property name="ObjectShortName">REGWRITE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/EXTOP" type="logic">
+      <obj_property name="ElementShortName">EXTOP</obj_property>
+      <obj_property name="ObjectShortName">EXTOP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/ALUSRC" type="logic">
+      <obj_property name="ElementShortName">ALUSRC</obj_property>
+      <obj_property name="ObjectShortName">ALUSRC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/MEMWRITE" type="logic">
+      <obj_property name="ElementShortName">MEMWRITE</obj_property>
+      <obj_property name="ObjectShortName">MEMWRITE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/MEM2REG" type="logic">
+      <obj_property name="ElementShortName">MEM2REG</obj_property>
+      <obj_property name="ObjectShortName">MEM2REG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/ALUOP" type="array">
+      <obj_property name="ElementShortName">ALUOP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOP[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/ZERO" type="logic">
+      <obj_property name="ElementShortName">ZERO</obj_property>
+      <obj_property name="ObjectShortName">ZERO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGBNK_WA_IN" type="array">
+      <obj_property name="ElementShortName">REGBNK_WA_IN[4:0]</obj_property>
+      <obj_property name="ObjectShortName">REGBNK_WA_IN[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGBNK_RD1" type="array">
+      <obj_property name="ElementShortName">REGBNK_RD1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REGBNK_RD1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGBNK_RD2" type="array">
+      <obj_property name="ElementShortName">REGBNK_RD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REGBNK_RD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGBNK_WD" type="array">
+      <obj_property name="ElementShortName">REGBNK_WD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REGBNK_WD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/sign_ext_imm" type="array">
+      <obj_property name="ElementShortName">sign_ext_imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sign_ext_imm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/ALU_B_IN" type="array">
+      <obj_property name="ElementShortName">ALU_B_IN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_B_IN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/ERR_RESERVED" type="logic">
+      <obj_property name="ElementShortName">ERR_RESERVED</obj_property>
+      <obj_property name="ObjectShortName">ERR_RESERVED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/OF" type="logic">
+      <obj_property name="ElementShortName">OF</obj_property>
+      <obj_property name="ObjectShortName">OF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/ALU_OUT" type="array">
+      <obj_property name="ElementShortName">ALU_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/DM_OUT" type="array">
+      <obj_property name="ElementShortName">DM_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_OUT[31:0]</obj_property>
+   </wvobject>
+</wave_config>
