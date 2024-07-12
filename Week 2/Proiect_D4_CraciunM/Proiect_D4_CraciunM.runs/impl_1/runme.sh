@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/training/Proiect_D4_CraciunM/Proiect_D4_CraciunM.runs/impl_1'
+HD_PWD='C:/Users/training/Week 2/Proiect_D4_CraciunM/Proiect_D4_CraciunM.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
-EAStep vivado -log CBB_D.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source CBB_D.tcl -notrace
+/bin/touch .init_design.begin.rst
+EAStep vivado -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 
 
