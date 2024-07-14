@@ -1,5 +1,25 @@
 `timescale 1ns / 1ps
 
+//////////////////////////////////////////////////////////////////////////////////
+// Company: AMD
+// Engineer: Craciun Mihai
+// 
+// Create Date: 12.07.2024 12:30:55
+// Design Name: MIPS Microprocessor
+// Module Name: top
+// Project Name: Day 5's work & homework
+// Target Devices: --//--
+// Tool Versions: --//--
+// Description: 
+// 
+// Dependencies: None 
+// 
+// Revision: 1.0
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
 module top(
         input clk
         );
