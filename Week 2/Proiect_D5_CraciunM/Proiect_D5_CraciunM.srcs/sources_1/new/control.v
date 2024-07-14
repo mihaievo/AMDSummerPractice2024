@@ -11,7 +11,7 @@ module control(
         output reg MEM2REG
         );
         always@(OPCODE or FUNCT or ZERO)
-            case({OPCODE, FUNCT, ZERO}) // add ZERO here for use with branch instructions later
+            casex({OPCODE, FUNCT, ZERO}) // add ZERO here for use with branch instructions later
             // ADD
             13'b000000_100000_x: 
                 {REGDST, REGWRITE, EXTOP, ALUSRC, ALUOP, MEMWRITE, MEM2REG} = 10'b1_1_0_0_0000_0_1;
@@ -29,6 +29,8 @@ module control(
                 {REGDST, REGWRITE, EXTOP, ALUSRC, ALUOP, MEMWRITE, MEM2REG} = 10'b1_1_0_0_0101_0_1;
             // ADDI - we take imm from instruction so we need extension.
             13'b001000_xxxxxx_x: 
-                {REGDST, REGWRITE, EXTOP, ALUSRC, ALUOP, MEMWRITE, MEM2REG} = 10'b1_1_1_1_0000_0_1;    
+                {REGDST, REGWRITE, EXTOP, ALUSRC, ALUOP, MEMWRITE, MEM2REG} = 10'b0_1_1_1_0000_0_1;
+            default:
+                {REGDST, REGWRITE, EXTOP, ALUSRC, ALUOP, MEMWRITE, MEM2REG} = 10'bx_x_x_x_xxxx_x_x;
             endcase
 endmodule

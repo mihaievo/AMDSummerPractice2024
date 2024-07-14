@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="150.001 ns"></ZoomEndTime>
-      <Cursor1Time time="8.459 ns"></Cursor1Time>
+      <ZoomStartTime time="6.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="46.667 ns"></ZoomEndTime>
+      <Cursor1Time time="20.966 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="152"></NameColumnWidth>
-      <ValueColumnWidth column_width="67"></ValueColumnWidth>
+      <NameColumnWidth column_width="145"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="21" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/tb_top/clkt" type="logic">
       <obj_property name="ElementShortName">clkt</obj_property>
       <obj_property name="ObjectShortName">clkt</obj_property>
@@ -64,6 +64,14 @@
    <wvobject fp_name="/tb_top/top_dut/ZERO" type="logic">
       <obj_property name="ElementShortName">ZERO</obj_property>
       <obj_property name="ObjectShortName">ZERO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGBNK_RA1" type="array">
+      <obj_property name="ElementShortName">REGBNK_RA1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">REGBNK_RA1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top_dut/REGBNK_RA2" type="array">
+      <obj_property name="ElementShortName">REGBNK_RA2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">REGBNK_RA2[4:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/top_dut/REGBNK_WA_IN" type="array">
       <obj_property name="ElementShortName">REGBNK_WA_IN[4:0]</obj_property>

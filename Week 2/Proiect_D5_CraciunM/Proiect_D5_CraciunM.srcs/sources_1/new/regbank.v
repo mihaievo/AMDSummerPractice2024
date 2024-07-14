@@ -1,14 +1,3 @@
-module reg_n#(parameter DATA_WIDTH=32) (
-        input clk,
-        input pl,
-        input [DATA_WIDTH - 1:0] di,
-        output reg [DATA_WIDTH - 1:0] do
-        );
-        always@(di)
-            if(pl)
-                do <= di;
-endmodule
-
 module REG_BANK(
         input clk,
         input REGWRITE,
@@ -22,21 +11,48 @@ module REG_BANK(
         
         // we will use these as parallel load for each register.
         
-        wire pl_RD1 = (WA == 5'b00000) ? 1'b1 : 1'b0; 
-        wire pl_RD2 = (WA == 5'b00001) ? 1'b1 : 1'b0;
+        reg [31:0] REGCONTENT[31:0]; // 32 registers
         
-        reg_n#(32) RD1_inst(
-                .clk(clk),
-                .pl(pl_RD1 & REGWRITE),
-                .di(WD),
-                .do(RD1)
-                );
-                
-         reg_n#(32) RD2_inst(
-                .clk(clk),
-                .pl(pl_RD2 & REGWRITE),
-                .di(WD),
-                .do(RD2)
-                );
+        initial begin
+            REGCONTENT[0] = 0; // zero
+            REGCONTENT[1] = 0; // at 
+            REGCONTENT[2] = 0; // v0
+            REGCONTENT[3] = 0; // v1
+            REGCONTENT[4] = 0; // a0
+            REGCONTENT[5] = 0; // a1
+            REGCONTENT[6] = 0; // a2
+            REGCONTENT[7] = 0; // a3
+            REGCONTENT[8] = 0; // t0
+            REGCONTENT[9] = 0; // t1
+            REGCONTENT[10] = 0; // t2
+            REGCONTENT[11] = 0; // t3
+            REGCONTENT[12] = 0; // t4
+            REGCONTENT[13] = 0; // t5
+            REGCONTENT[14] = 0; // t6
+            REGCONTENT[15] = 0; // t7
+            REGCONTENT[16] = 0; // t8
+            REGCONTENT[17] = 0; // t9
+            REGCONTENT[18] = 0; // s0
+            REGCONTENT[19] = 0; // s1
+            REGCONTENT[20] = 0; // s2
+            REGCONTENT[21] = 0; // s3
+            REGCONTENT[22] = 0; // s4
+            REGCONTENT[23] = 0; // s5
+            REGCONTENT[24] = 0; // s6
+            REGCONTENT[25] = 0; // s7
+            REGCONTENT[26] = 0; // k0
+            REGCONTENT[27] = 0; // k1
+            REGCONTENT[28] = 0; // gp
+            REGCONTENT[29] = 0; // sp
+            REGCONTENT[30] = 0; // fp
+            REGCONTENT[31] = 0; // ra
+        end
+        
+        always@(posedge clk)
+            if(WA >= 5'b00001)
+                REGCONTENT[WA] <= WD;
+        
+        assign RD1 = REGCONTENT[RA1];
+        assign RD2 = REGCONTENT[RA2];
                 
 endmodule
