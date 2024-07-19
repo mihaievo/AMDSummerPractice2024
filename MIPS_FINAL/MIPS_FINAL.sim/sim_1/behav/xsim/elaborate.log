@@ -1,0 +1,43 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_main_top_behav xil_defaultlib.tb_main_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/one_period.v" Line 1. Module one_period doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/im.v" Line 2. Module im doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/regbank.v" Line 1. Module REG_BANK doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/alu.v" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/dm.v" Line 2. Module dm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/clk_divider.v" Line 1. Module clk_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/clk_divider.v" Line 1. Module clk_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/one_period.v" Line 1. Module one_period doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/im.v" Line 2. Module im doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/regbank.v" Line 1. Module REG_BANK doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/alu.v" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/dm.v" Line 2. Module dm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/clk_divider.v" Line 1. Module clk_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/clk_divider.v" Line 1. Module clk_divider doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_period
+Compiling module xil_defaultlib.im
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.REG_BANK
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.dm
+Compiling module xil_defaultlib.MIPS_PROC
+Compiling module xil_defaultlib.clk_divider
+Compiling module xil_defaultlib.cnt2
+Compiling module xil_defaultlib.dig_dec
+Compiling module xil_defaultlib.dec2_4
+Compiling module xil_defaultlib.display_top
+Compiling module xil_defaultlib.main_top
+Compiling module xil_defaultlib.tb_main_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_main_top_behav

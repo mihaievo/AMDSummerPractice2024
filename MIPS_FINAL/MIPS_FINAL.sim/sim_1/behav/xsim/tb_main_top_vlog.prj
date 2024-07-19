@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/alu.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/clk_divider.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/dm.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/im.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/one_period.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/regbank.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/control.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/mips_proc.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/main_top.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/display_top.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/dec2_4.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/cnt2.v" \
+"../../../../Proiect_D5_CraciunM.srcs/sources_1/new/digdec.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_main_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_main_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="451.519 ns"></ZoomEndTime>
+      <Cursor1Time time="96.379 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="163"></NameColumnWidth>
+      <ValueColumnWidth column_width="95"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/tb_main_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/STEP_BTN" type="logic">
+      <obj_property name="ElementShortName">STEP_BTN</obj_property>
+      <obj_property name="ObjectShortName">STEP_BTN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/STEP" type="logic">
+      <obj_property name="ElementShortName">STEP</obj_property>
+      <obj_property name="ObjectShortName">STEP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/MIPS_PROC_dut/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/MIPS_PROC_dut/REG_BANK_inst/REGCONTENT[1]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      <obj_property name="label">REG1 (the one we use in the code)</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/MIPS_PROC_dut/dm_inst/ram_content[255]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[255][31:0]</obj_property>
+      <obj_property name="label">STDOUT(RAM[255])</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/MIPS_PROC_dut/dm_inst/ram_content[254]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[254][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[254][31:0]</obj_property>
+      <obj_property name="label">STDIN(ram(254)</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/MIPS_PROC_dut/dm_inst/ram_content[253]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[253][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[253][31:0]</obj_property>
+      <obj_property name="label">VMEM(ram[253]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/SW_IN" type="array">
+      <obj_property name="ElementShortName">SW_IN[11:0]</obj_property>
+      <obj_property name="ObjectShortName">SW_IN[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/IO_LED_OUT" type="array">
+      <obj_property name="ElementShortName">IO_LED_OUT[11:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_LED_OUT[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/display_inst/clk_div_display" type="logic">
+      <obj_property name="ElementShortName">clk_div_display</obj_property>
+      <obj_property name="ObjectShortName">clk_div_display</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/display_inst/clk_div_rotate" type="logic">
+      <obj_property name="ElementShortName">clk_div_rotate</obj_property>
+      <obj_property name="ObjectShortName">clk_div_rotate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/display_inst/din_main" type="array">
+      <obj_property name="ElementShortName">din_main[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din_main[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/dut/display_inst/cnt2_out" type="array">
+      <obj_property name="ElementShortName">cnt2_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt2_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/a" type="logic">
+      <obj_property name="ElementShortName">a</obj_property>
+      <obj_property name="ObjectShortName">a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/b" type="logic">
+      <obj_property name="ElementShortName">b</obj_property>
+      <obj_property name="ObjectShortName">b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/c" type="logic">
+      <obj_property name="ElementShortName">c</obj_property>
+      <obj_property name="ObjectShortName">c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/d" type="logic">
+      <obj_property name="ElementShortName">d</obj_property>
+      <obj_property name="ObjectShortName">d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/e" type="logic">
+      <obj_property name="ElementShortName">e</obj_property>
+      <obj_property name="ObjectShortName">e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/f" type="logic">
+      <obj_property name="ElementShortName">f</obj_property>
+      <obj_property name="ObjectShortName">f</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/g" type="logic">
+      <obj_property name="ElementShortName">g</obj_property>
+      <obj_property name="ObjectShortName">g</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/A1" type="logic">
+      <obj_property name="ElementShortName">A1</obj_property>
+      <obj_property name="ObjectShortName">A1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/A2" type="logic">
+      <obj_property name="ElementShortName">A2</obj_property>
+      <obj_property name="ObjectShortName">A2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/A3" type="logic">
+      <obj_property name="ElementShortName">A3</obj_property>
+      <obj_property name="ObjectShortName">A3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main_top/A4" type="logic">
+      <obj_property name="ElementShortName">A4</obj_property>
+      <obj_property name="ObjectShortName">A4</obj_property>
+   </wvobject>
+</wave_config>

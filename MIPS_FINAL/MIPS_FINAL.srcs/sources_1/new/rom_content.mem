@@ -1,0 +1,5 @@
+100011_00000_00001_0000000011111110 // lw $1, $0(254) -> will read from ram[254] in register 1 <- STDIN
+101011_00000_00001_0000000011111111 // sw $1, $0(255) -> will write at ram[255] -> STDOUT
+001000_00010_00010_0000000100000001 // addi $2, $2, 513 - we keep adding for testing video memory.
+101011_00000_00010_0000000011111101 // sw $2, $0(253) -> will write at ram[253] -> VIDEO MEMORY
+000010_00000000000000000000000000 // j 0

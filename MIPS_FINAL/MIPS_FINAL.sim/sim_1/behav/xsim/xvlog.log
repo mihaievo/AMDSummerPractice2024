@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/clk_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/dm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/im.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module im
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/one_period.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_period
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/regbank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_BANK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/mips_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_PROC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/main_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_top
+INFO: [VRFC 10-311] analyzing module tb_main_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/display_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/dec2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dec2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/cnt2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mihai/Downloads/mihaievo AMDSummerPractice2024 main Week 3-Proiect_D4_CraciunM/Proiect_D5_CraciunM.srcs/sources_1/new/digdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dig_dec
